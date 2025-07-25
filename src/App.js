@@ -379,7 +379,7 @@ const ResearchPage = () => {
     const citations = {
         APA: "Akiyama, Y., Nolan, J., Darrah, M., Abdal Rahem, M., & Wang, L. (2016). A method for measuring consensus within groups: An index of disagreement via conditional probability. Information Sciences, 345, 116–128. https://doi.org/10.1016/j.ins.2016.01.052",
         MLA: 'Akiyama, Yoshio, et al. “A Method for Measuring Consensus within Groups: An Index of Disagreement via Conditional Probability.” Information Sciences, vol. 345, 2016, pp. 116–128. Elsevier, https://doi.org/10.1016/j.ins.2016.01.052',
-        BibTeX: `@article{Akiyama2016Consensus,\n title = {A method for measuring consensus within groups: An index of disagreement via conditional probability},\n author = {Akiyama, Yoshio and Nolan, James and Darrah, Marjorie and Abdal Rahem, Mushtaq and Wang, Lei},\n journal   = {Information Sciences},\n volume    = {345},\n pages     = {116--128},\n year      = {2016},\n publisher = {Elsevier},\n doi       = {10.1016/j.ins.2016.01.052} }`
+        BibTeX: `@article{Akiyama2016Consensus,\n title = {A method for measuring consensus within groups: An index of disagreement via conditional probability},\n author = {Akiyama, Yoshio and Nolan, James and Darrah, Marjorie and Abdal Rahem, Mushtaq and Wang, Lei},\n journal   = {Information Sciences},\n volume    = {345},\n pages     = {116--128},\n year      = {2016},\n publisher = {Elsevier},\n doi       = {10.1016/j.ins.2016.01.052}`
     };
 
     const copyToClipboard = (text) => {
@@ -420,8 +420,8 @@ const ResearchPage = () => {
                 </div>
 
                 <div className="bg-slate-800/50 border border-slate-700 p-6 sm:p-8 rounded-xl shadow-lg">
-                    <h3 className="text-2xl font-bold text-white mb-2">The Index of Disagreement: A Novel Framework for Consensus Measurement</h3>
-                    <p className="text-slate-400 mb-8 font-medium">Journal of Advanced Quantitative Methods, 2025</p>
+                    <h3 className="text-2xl font-bold text-white mb-2">A method for measuring consensus within groups: An index of disagreement via conditional probability</h3>
+                    <p className="text-slate-400 mb-8 font-medium">Journal of Information Sciences</p>
                     
                     <Section title="Abstract">
                         <p>This paper introduces a new mathematical framework for quantifying the level of disagreement within a group, termed the "Index of Disagreement" (L). Traditional measures of central tendency and dispersion, such as mean and variance, often fail to capture the nuances of agreement, particularly in skewed or bimodal distributions common in survey data. Our proposed model chain provides a multi-step, deterministic formula that translates mean (C) and variance (D) into a single, interpretable index.</p>
