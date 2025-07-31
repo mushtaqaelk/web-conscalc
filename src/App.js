@@ -22,8 +22,8 @@ const useNav = () => useContext(AppContext);
 //--- UTILITY: CONSENSUS CALCULATOR LOGIC (FINAL CORRECTION) ---//
 const calculateConsensus = (C, D) => {
     // Validate inputs
-    if (typeof C !== 'number' || typeof D !== 'number' || isNaN(C) || isNaN(D) || C < 1 || C > 5 || D < 0) {
-        return { C: null, D: null, E: null, F: null, G: null, H: null, I: null, J: null, K: null, L: null, error: 'Invalid input. Mean (C) must be 1-5, Variance (D) must be non-negative.' };
+    if (typeof C !== 'number' || typeof D !== 'number' || isNaN(C) || isNaN(D) || C < 1 || C > 5 || D < 0 || D > 4) {
+        return { C: null, D: null, E: null, F: null, G: null, H: null, I: null, J: null, K: null, L: null, error: 'Invalid input. Mean (C) must be 1-5, Variance (D) must be 0-4.' };
     }
 
     // Step 1: Calculate intermediate variables
