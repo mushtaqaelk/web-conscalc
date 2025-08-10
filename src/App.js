@@ -477,8 +477,8 @@ const HubPage = () => {
     const publications = useMemo(() => [
         { title: 'A Geometric Approach for Computing a Measure of Consensus for Groups', authors: 'Abdal Rahem, M. & Darrah, M.', journal: 'International Mathematical Forum', year: 2016, doi: '10.12988/imf.2016.68115' },
         { title: 'Using a computational approach for generalizing a consensus measure to Likert scales of any size n', authors: 'Abdal Rahem, M. & Darrah, M.', journal: 'International Journal of Mathematics and Mathematical Sciences', year: 2018, doi: '10.1155/2018/5726436' },
-        { title: 'The Limits of Variance as a Disagreement Proxy', authors: 'Garcia, M.', journal: 'Sociological Methods & Research', year: 2022, doi: '10.xxxx/socmeth.2022.03' },
-        { title: 'Polarization and Agreement: A Network Perspective', authors: 'Kim, P.', journal: 'Journal of Social Structures', year: 2024, doi: '10.xxxx/joss.2024.04' },
+        { title: 'A Multidimensional Technique for Measuring Consensus Within Groups via Conditional Probability', authors: 'Abd AL-Rahem, M.', Institution: 'West Virginia University', year: 2017 },
+        { title: 'Consensus-Based Automatic Group Decision-Making Method with Reliability and Subjectivity Measures Based on Sentiment Analysis', authors: 'Bajaña-Zajía, J.', journal: 'Algorithms', year: 2025, doi: '10.3390/a18080477' },
         { title: 'Measuring Inter-Rater Reliability with Complex Data', authors: 'Davis, R. & Patel, S.', journal: 'Journal of Modern Statistics', year: 2021, doi: '10.xxxx/jmodstat.2021.05' },
         { title: 'A Unified Framework for Agreement Indices', authors: 'Thompson, E.', journal: 'Psychometrika', year: 2022, doi: '10.xxxx/psycho.2022.06' },
     ], []);
