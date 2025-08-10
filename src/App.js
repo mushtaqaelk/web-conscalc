@@ -475,8 +475,8 @@ const HubPage = () => {
     const [sortOrder, setSortOrder] = useState('desc');
     
     const publications = useMemo(() => [
-        { title: 'A Bayesian Approach to Measuring Group Agreement', authors: 'Smith, J. & Williams, A.', journal: 'Statistics in Society', year: 2024, doi: '10.xxxx/stats.2024.01' },
-        { title: 'Entropy-based Consensus Quantification in Multi-Agent Systems', authors: 'Chen, L. et al.', journal: 'IEEE Transactions on Cybernetics', year: 2023, doi: '10.xxxx/cyber.2023.02' },
+        { title: 'A Geometric Approach for Computing a Measure of Consensus for Groups', authors: 'Abdal Rahem, M. & Darrah, M.', journal: 'International Mathematical Forum', year: 2016, doi: '10.12988/imf.2016.68115' },
+        { title: 'Using a computational approach for generalizing a consensus measure to Likert scales of any size n', authors: 'Abdal Rahem, M. & Darrah, M.', journal: 'International Journal of Mathematics and Mathematical Sciences', year: 2018, doi: '10.1155/2018/5726436' },
         { title: 'The Limits of Variance as a Disagreement Proxy', authors: 'Garcia, M.', journal: 'Sociological Methods & Research', year: 2022, doi: '10.xxxx/socmeth.2022.03' },
         { title: 'Polarization and Agreement: A Network Perspective', authors: 'Kim, P.', journal: 'Journal of Social Structures', year: 2024, doi: '10.xxxx/joss.2024.04' },
         { title: 'Measuring Inter-Rater Reliability with Complex Data', authors: 'Davis, R. & Patel, S.', journal: 'Journal of Modern Statistics', year: 2021, doi: '10.xxxx/jmodstat.2021.05' },
