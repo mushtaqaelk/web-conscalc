@@ -427,6 +427,20 @@ const ResearchPage = () => {
                         <p>This paper presents a new index of disagreement (or measure of consensus) for comparison of data collected using Likert items. This new index, which assesses the level of disagreement among group members, exploits the conditional distribution of the variance for a given mean. The variance is often used as a measure of disagreement, with high variance seen as a high disagreement in a group. However, since the range of the variance is a function of the mean, this implies that for a mean close to the end points of the scale, the range of the variance is relatively small and for a mean at the center of the scale the range of the variance is larger. The index of disagreement introduced in this paper takes into account both the mean and the variance and provides a way to compare two groups that is more meaningful than just considering the variance or other measures of disagreement or consensus that only depend on the variance.</p>
                     </Section>
                     <Section title="2. The Mathematical Model">
+                      <p>This model measures the level of disagreement in group responses to a Likert-type item. It uses a simple, scale-independent formula to capture how far responses deviate from the mean.</p>
+
+                          <h3>Definitions:</h3>
+                      <ul>
+                        <li><code>x<sub>i</sub></code>: Each response level (e.g., 1 to 5)</li>
+                        <li><code>p<sub>i</sub></code>: Proportion of responses at level <code>x<sub>i</sub></code></li>
+                        <li><code>μ</code>: Mean of all responses</li>
+                        <li><code>d</code>: Width of the scale, computed as <code>x<sub>max</sub> - x<sub>min</sub></code></li>
+                    </ul>
+
+                    <h3>Step 1: Disagreement Index (Φ)</h3>
+                        <div class="formula">
+                        Φ = ∑ p<sub>i</sub> × |x<sub>i</sub> − μ| ⁄ d
+                    </div>
                         <p>The model is a sequential calculation starting from user-provided Mean (C) and Variance (D). The core idea is to transform these inputs into a standardized space to evaluate the distribution of disagreement.</p>
                         <Formula>E = IF(C &gt; 3, 6 - C, C)</Formula>
                         <p>This step normalizes the mean to a 1-3 scale.</p>
