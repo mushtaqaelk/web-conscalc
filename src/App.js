@@ -439,7 +439,7 @@ const ResearchPage = () => {
 
                     <h3>Step 1: Disagreement Index (Φ)</h3>
                         <div class="formula">
-                        Φ = ∑ p<sub>i</sub> × |x<sub>i</sub> − μ| ⁄ d
+                       <Formula>  Φ = ∑ p<sub>i</sub> × |x<sub>i</sub> − μ| ⁄ d </Formula>
                     </div>
                         <p>The model is a sequential calculation starting from user-provided Mean (C) and Variance (D). The core idea is to transform these inputs into a standardized space to evaluate the distribution of disagreement.</p>
                         <Formula>E = IF(C &gt; 3, 6 - C, C)</Formula>
