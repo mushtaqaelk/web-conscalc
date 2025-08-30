@@ -441,9 +441,20 @@ const ResearchPage = () => {
                         <div class="formula">
                        <Formula>  Φ = ∑ p<sub>i</sub> × |x<sub>i</sub> − μ| ⁄ d </Formula>
                     </div>
-                        <p>The model is a sequential calculation starting from user-provided Mean (C) and Variance (D). The core idea is to transform these inputs into a standardized space to evaluate the distribution of disagreement.</p>
-                        <Formula>E = IF(C &gt; 3, 6 - C, C)</Formula>
-                        <p>This step normalizes the mean to a 1-3 scale.</p>
+                        <p>This index ranges from 0 (perfect agreement) to 1 (maximum disagreement).</p>
+                        <h3>Step 2: Consensus Index (Ψ)</h3>
+                        <Formula> Ψ = 1 − Φv</Formula>
+                        <p>This is the complement of Φ, representing the overall level of agreement among group members.</p>
+                        <h3>Why This Model?</h3>
+                        <ul>
+                              <li>Mathematically clear and interpretable</li>
+                              <li>Scale-independent and works on any ordinal range</li>
+                              <li>Ideal for Likert-type data in surveys or decision-making</li>
+                              <li>Faithfully based on Akiyama et al. (2009)</li>
+                        </ul>
+
+    <p class="note">You can use this tool to calculate Φ and Ψ directly from your survey data using the upload panel above.</p>
+
                         <Formula>F = (E - 1) / 2  and  G = MAX(0, E - 2)</Formula>
                         <p>These define the upper and lower bounds of the transformed space.</p>
                          <Formula>L = (J - K) / I</Formula>
