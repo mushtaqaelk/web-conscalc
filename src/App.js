@@ -443,8 +443,9 @@ const ResearchPage = () => {
                     </div>
                         <p>This index ranges from 0 (perfect agreement) to 1 (maximum disagreement).</p>
                         <h3>Step 2: Consensus Index (Ψ)</h3>
-                        <Formula> Ψ = 1 − Φv</Formula>
+                        <Formula> Ψ = 1 − Φ </Formula>
                         <p>This is the complement of Φ, representing the overall level of agreement among group members.</p>
+    
                         <h3>Why This Model?</h3>
                         <ul>
                               <li>Mathematically clear and interpretable</li>
