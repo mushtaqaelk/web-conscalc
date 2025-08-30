@@ -451,15 +451,10 @@ const ResearchPage = () => {
                               <li>Mathematically clear and interpretable</li>
                               <li>Scale-independent and works on any ordinal range</li>
                               <li>Ideal for Likert-type data in surveys or decision-making</li>
-                              <li>Faithfully based on Akiyama et al. (2009)</li>
+                              <li>Faithfully based on Akiyama et al. (2016)</li>
                         </ul>
 
-    <p class="note">You can use this tool to calculate Φ and Ψ directly from your survey data using the upload panel above.</p>
-
-                        <Formula>F = (E - 1) / 2  and  G = MAX(0, E - 2)</Formula>
-                        <p>These define the upper and lower bounds of the transformed space.</p>
-                         <Formula>L = (J - K) / I</Formula>
-                        <p>The final Index of Disagreement (L) is a normalized ratio of cumulative disagreement (J) and consensus potential (K), scaled by a normalization factor (I). A value of 0 indicates maximum consensus, while 1 indicates maximum disagreement.</p>
+                    <p class="note">You can use this tool to calculate Φ and Ψ directly from your survey data.</p>
                     </Section>
                     {/* Other sections omitted for brevity but would follow this structure */}
                      <div className="mt-8">
