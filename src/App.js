@@ -459,7 +459,7 @@ const ResearchPage = () => {
                     {/* Other sections omitted for brevity but would follow this structure */}
                      <div className="mt-8">
                         <a href="#" onClick={(e) => e.preventDefault()} className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-teal-400 text-slate-900 font-bold px-6 py-3 rounded-lg hover:bg-teal-300 transition-all shadow-lg shadow-teal-500/20">
-                           <Download className="w-5 h-5"/> Download Full Paper (PDF)
+                           <Download className="w-5 h-5"/> Go to Full Paper
                         </a>
                     </div>
                 </div>
