@@ -519,7 +519,7 @@ const HubPage = () => {
                 pub.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                 pub.authors.toLowerCase().includes(searchTerm.toLowerCase())
             )
-            .sort((a, b) => sortOrder === 'asc' ? b.year - a.year : a.year - b.year);
+            .sort((b, a) => sortOrder === 'asc' ? b.year - a.year : a.year - b.year);
     }, [publications, searchTerm, sortOrder]);
     
     const pubDataByYear = useMemo(() => {
@@ -527,7 +527,7 @@ const HubPage = () => {
             acc[pub.year] = (acc[pub.year] || 0) + 1;
             return acc;
         }, {});
-        return Object.keys(counts).map(year => ({ year, count: counts[year] })).sort((a,b) => a.year - b.year);
+        return Object.keys(counts).map(year => ({ year, count: counts[year] })).sort((b,a) => a.year - b.year);
     }, [publications]);
 
     return (
