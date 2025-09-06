@@ -493,7 +493,7 @@ const ResearchPage = () => {
 const HubPage = () => {
     const [submitted, setSubmitted] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
-    const [sortOrder, setSortOrder] = useState('asc');
+    const [sortOrder, setSortOrder] = useState('desc');
     
     const publications = useMemo(() => [
         { title: 'A Geometric Approach for Computing a Measure of Consensus for Groups', authors: 'Abdal Rahem, M. & Darrah, M.', journal: 'International Mathematical Forum', year: 2016, doi: '10.12988/imf.2016.68115' },
@@ -519,7 +519,7 @@ const HubPage = () => {
                 pub.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                 pub.authors.toLowerCase().includes(searchTerm.toLowerCase())
             )
-            .sort((b, a) => sortOrder === 'asc' ? b.year - a.year : a.year - b.year);
+            .sort((b, a) => sortOrder === 'desc' ? b.year - a.year : a.year - b.year);
     }, [publications, searchTerm, sortOrder]);
     
     const pubDataByYear = useMemo(() => {
