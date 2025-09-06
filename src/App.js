@@ -458,7 +458,7 @@ const ResearchPage = () => {
                     </Section>
                     {/* Other sections omitted for brevity but would follow this structure */}
                      <div className="mt-8">
-                        <a href="https://doi.org/10.1016/j.ins.2016.01.052" onClick={(e) => e.preventDefault()} className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-teal-400 text-slate-900 font-bold px-6 py-3 rounded-lg hover:bg-teal-300 transition-all shadow-lg shadow-teal-500/20">
+                        <a href="https://doi.org/10.1016/j.ins.2016.01.052" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-teal-400 text-slate-900 font-bold px-6 py-3 rounded-lg hover:bg-teal-300 transition-all shadow-lg shadow-teal-500/20">
                            <Download className="w-5 h-5"/> Go to Full Paper
                         </a>
                     </div>
