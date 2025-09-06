@@ -557,8 +557,8 @@ const HubPage = () => {
                                 onChange={(e) => setSortOrder(e.target.value)}
                                 className="appearance-none w-full sm:w-auto bg-slate-800/80 border border-slate-700 rounded-lg pl-4 pr-10 py-2.5 text-white focus:ring-1 focus:ring-teal-400 outline-none"
                             >
-                                <option value="asc">Year: Newest</option>
-                                <option value="desc">Year: Oldest</option>
+                                <option value="asc">Year: Oldest</option>
+                                <option value="desc">Year: Newest</option>
                                 
                             </select>
                             <ChevronsUpDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"/>
